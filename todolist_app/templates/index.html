@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} 
+    <title>TOSNIA, FLETBUSH!</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4">
+        <img src="{% static 'images/denver.jpg' %}" alt="Denver" class="rounded shadow-sm" width="430" height="250">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/denver_2.jpg' %}" alt="Denver2" class="rounded shadow-sm" width="430" height="250">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/denver_3.jpg' %}" alt="Denver3" class="rounded shadow-sm" width="430" height="250">
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-10 offset-md-1">
+          <center><p Class="h1 text-primary">THINGS TO DO IN DENVER WHEN YOU'RE DEAD</p></center>
+          <center><p Class="h2 mt-3">Jimmy The Saint, Tosnia From Fletbush!</p></center>
+          <center><p Class="h4">Went To Seminary School But Lost The Calling.</p></center>
+
+          <center><a href="{% url 'todolist' %}"<button type="button" class="btn btn-primary btn-lg mt-3 shadow">BUCKWHEATS</button></a></center>
+      </div>
+    
+  </div>
+{% endblock content %} 
